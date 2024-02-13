@@ -5,13 +5,10 @@ body {
 .container{
     font-family: "arial";
     font-size: 24px;
-  }
-
-  .wrapper {
-      display: inline-block;
+    display: inline-block;
   }
   
-  div > p {
+  .typed {
     overflow: hidden;
     white-space: nowrap;
     font-family:"Source Code Pro",Monaco,"Courier New",monospace;
@@ -21,49 +18,73 @@ body {
     border-right: 7px solid;
     width: 0;
     color: yellow;
-    /* border-right-color: transparent; */
+    border-right-color: transparent;
     /* animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite; */
   }
 
-  .typed1 {
-    animation: typing 4s steps(40, end) forwards, blinking 1s 3 forwards 4s;
+  label {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
   }
 
-  .typed2{
-    animation: typing 4s steps(60, end) forwards 7s, blinking 1s 3 forwards 12s;
+  .error-modal {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+  }
+
+  input {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+    border: none;
+    outline: none;
+    background-color: black;
+}
+
+  .typed:nth-child(1) {
+    animation: typing 2s steps(40, end) forwards;
+  }
+
+  .typed:nth-child(2) {
+    animation: typing 5s steps(60, end) forwards 4s;
   } 
 
   .typed:nth-child(3) {
-    width: 0;
-    animation: typing 4s steps(40, end) forwards 14s, blinking 1s 3 forwards 18s;
+    animation: typing 4s steps(40, end) forwards 9s;
   }
 
   .typed:nth-child(4) {
-    width: 0;
-    animation: typing 3s steps(40, end) forwards 21s, blinking 1s 3 forwards 24s;
+    animation: typing 3s steps(40, end) forwards 15s;
   }
 
   .typed:nth-child(5) {
-    animation: typing-5 1s steps(40, end) forwards 27s, blinking 0s forwards 29s;
+    animation: typing 3s steps(40, end) forwards 19s;
   }
+
   .typed:nth-child(6) {
-    animation: typing-6 .3s steps(60, end) forwards 29s, blinking 1s infinite 30s;
+    animation: answer 3s steps(40, end) forwards 22s;
   } 
-    
-  @keyframes typing-6 {
-    from { width: 0 }
-    to { width: 2% }
-  }
-
-
-  @keyframes typing-5 {
-    from { width: 0 }
-    to { width: 10% }
-  }
 
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0}
+    to { width: 100%;
+      border-right-color: transparent;
+    }
+  }
+
+  @keyframes answer {
+    from { width: 0}
+    to { width: 2%;
+      border-right-color: transparent;
+    }
   }
   
   @keyframes blinking {
