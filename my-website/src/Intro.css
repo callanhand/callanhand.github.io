@@ -2,6 +2,11 @@ body {
     background-color: black;
 }
 
+.new-page {
+  background-color: lightblue;
+  height: 100vh;
+}
+
 .container{
     font-family: "arial";
     font-size: 24px;

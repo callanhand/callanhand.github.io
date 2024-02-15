@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Intro.css';
-import Popup from 'reactjs-popup';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+
+function NewPage() {
+    return <div className="new-page">This is the new page with a blue background.</div>;
+  }
 
 function Modal({ isOpen, onClose }) {
     if (!isOpen) return null;
@@ -19,20 +23,20 @@ function Intro() {
     const [userInput, setUserInput] = useState('');
     const [showModal, setShowModal] = useState(false);
 
-    const inputRef = useRef(null);
+    //const inputRef = React.createRef(); // Create a ref object
 
-    useEffect(() => {
-        // Focus the input element when the component mounts
-        inputRef.current.focus();
+    // useEffect(() => {
+    //     // Focus the input element when the component mounts
+    //     //inputRef.current.focus();
 
-        // Add event listener for click on the document
-        document.addEventListener('click', handleClick);
+    //     // Add event listener for click on the document
+    //     document.addEventListener('click', handleClick);
 
-        // Cleanup function to remove event listener
-        return () => {
-            document.removeEventListener('click', handleClick);
-        };
-    }, []);
+    //     // Cleanup function to remove event listener
+    //     return () => {
+    //         document.removeEventListener('click', handleClick);
+    //     };
+    // }, []);
 
     const handleChange = (e) => {
         const inputValue = e.target.value.toUpperCase();
@@ -46,9 +50,14 @@ function Intro() {
             setTimeout(() => {
                 setShowModal(false);
                 setUserInput('');
-              }, 2500); // Close modal after 3 seconds
-            
+              }, 2500); // Close modal after 2.5 seconds
 
+            return;
+        }
+        if (userInput === 'Y') {
+            console.log("I'm in");
+                  // Navigate to the new page
+            window.location.href = '/newPage';
             return;
         }
         // Reset the input field
@@ -57,7 +66,7 @@ function Intro() {
 
     const handleClick = () => {
         // Focus the input element when the user clicks anywhere on the page
-        inputRef.current.focus();
+        //inputRef.current.focus();
     };
 
     const closeModal = () => {
@@ -65,7 +74,10 @@ function Intro() {
       };
 
     return (
-        <body>
+        <Router> 
+        <Routes>
+        <Route exact path="/newPage" element={<NewPage/>} />
+        <Route exact path="/" element={ 
             <div class="container">
                 <p class="typed">$  Hi! My name is Callan Hand. </p>
                 <p class="typed">$  I'm an imaginative and passionate software engineer with
@@ -80,16 +92,16 @@ function Intro() {
                         type="text"
                         value={userInput}
                         onChange={handleChange}
-                        // onKeyDown={handleKeyDown}
-                        ref={inputRef}
                     />
                     </label>
                 </form>
                <Modal isOpen={showModal} onClose={closeModal} />
                 
             </div>
+        }/>
+        </Routes>
 
-        </body>
+        </Router>
     );
 }
 export default Intro;
