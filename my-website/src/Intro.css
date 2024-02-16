@@ -1,16 +1,12 @@
-body {
-    background-color: black;
-}
-
-.new-page {
-  background-color: lightblue;
-  height: 100vh;
-}
 
 .container{
     font-family: "arial";
     font-size: 24px;
     display: inline-block;
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+    z-index: 1;
   }
   
   .typed {
@@ -97,3 +93,69 @@ body {
     50% {border-right-color: yellow}
     100% {border-right-color: transparent}
   }
+  
+  .animate_content {
+    animation: animate 3s ease;
+  }
+
+  .animate_content-in {
+    animation: animate-in 3s ease;
+  }
+
+  .fade_in {
+    background-color: lightblue;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  @keyframes animate {
+    10% {
+      transform: scale(1, 0.002);
+    }
+    35% {
+      transform: scale(0.2, 0.002);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }
+    85% {
+      transform: scale(1, 0.002);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes animate-in {
+    10% {
+      transform: scale(1, 0.002);
+      opacity: 0;
+    }
+    35% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }
+    85% {
+      transform: scale(1, 0.002);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
