@@ -6,7 +6,6 @@
     background-color: black;
     width: 100vw;
     height:100vh;
-    z-index: 1;
   }
   
   .typed {
@@ -48,6 +47,7 @@
     border: none;
     outline: none;
     background-color: black;
+    transition: all 2s;
 }
 
   .typed:nth-child(1) {
@@ -93,7 +93,7 @@
     50% {border-right-color: yellow}
     100% {border-right-color: transparent}
   }
-  
+
   .animate_content {
     animation: animate 3s ease;
   }
@@ -102,19 +102,38 @@
     animation: animate-in 3s ease;
   }
 
+  .hidden {
+    display: none; 
+  }
+
   .fade_in {
-    background-color: lightblue;
+    background-color: black;
     height: 100vh;
+    display: flex;
     z-index: 10;
   }
 
-  .hidden {
-    display: none;
+  .disappear {
+      transform: rotate(20deg) translatey(-20px);
+      opacity: 0;
+      filter: blur(20px);
   }
 
-  .show {
-    display: block;
+
+  @keyframes disappearleft{
+    50% {transform: skew(50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
   }
+  @keyframes disappearight{
+    50% {transform: skew(-50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
+  }
+
+
 
   @keyframes animate {
     10% {
@@ -130,32 +149,9 @@
     }
     85% {
       transform: scale(1, 0.002);
-      opacity: 1;
+     opacity: 1;
     }
     100% {
       transform: scale(1, 1);
     }
   }
-
-  @keyframes animate-in {
-    10% {
-      transform: scale(1, 0.002);
-      opacity: 0;
-    }
-    35% {
-      transform: scale(0.2, 0.002);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(0.2, 0.002);
-      opacity: 0;
-    }
-    85% {
-      transform: scale(1, 0.002);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-  
