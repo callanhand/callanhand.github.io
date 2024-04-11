@@ -1,0 +1,73 @@
+
+.resume-body {
+    width: 100vw;
+    height: 100%;
+    background-color: #FEFAE0;
+}
+
+.spacer {
+    height: 60vh;
+}
+
+div {
+    font-family: Optima;
+    font-size: large;
+    color: #283618;
+}
+
+h1, h2 {
+   margin-left: 20px;
+   margin-top: 0px;
+   color: #283618;
+}
+
+li {
+    padding: 5px;
+}
+
+.top-line {
+    background: #606C38;
+    height: 5px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.section-line {
+    background: #606C38;
+    height: 3px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    background: #606C38;
+    height: 2px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flex-grid {
+    color: #6F343C;
+}
+
+.flex-grid {
+    display: flex;
+  }
+  .col {
+    flex: 2;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .col1, .col3 {
+    padding: 10px;
+    margin-left: 10px;
+    width: 15vw;
+  }
+
+  .col1 {
+    font-weight: bold;
+  }
