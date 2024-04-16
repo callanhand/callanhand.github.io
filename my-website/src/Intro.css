@@ -1,0 +1,157 @@
+
+.container{
+    font-family: "arial";
+    font-size: 24px;
+    display: inline-block;
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+    border-right: 7px solid;
+    width: 0;
+    color: yellow;
+    border-right-color: transparent;
+    /* animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite; */
+  }
+
+  label {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+  }
+
+  .error-modal {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+  }
+
+  input {
+    color: yellow;
+    font-family:"Source Code Pro",Monaco,"Courier New",monospace;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.5rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    transition: all 2s;
+}
+
+  .typed:nth-child(1) {
+    animation: typing 2s steps(40, end) forwards;
+  }
+
+  .typed:nth-child(2) {
+    animation: typing 5s steps(60, end) forwards 4s;
+  } 
+
+  .typed:nth-child(3) {
+    animation: typing 4s steps(40, end) forwards 9s;
+  }
+
+  .typed:nth-child(4) {
+    animation: typing 3s steps(40, end) forwards 15s;
+  }
+
+  .typed:nth-child(5) {
+    animation: typing 3s steps(40, end) forwards 19s;
+  }
+
+  .typed:nth-child(6) {
+    animation: answer 3s steps(40, end) forwards 22s;
+  } 
+
+  @keyframes typing {
+    from { width: 0}
+    to { width: 100%;
+      border-right-color: transparent;
+    }
+  }
+
+  @keyframes answer {
+    from { width: 0}
+    to { width: 2%;
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: yellow}
+    100% {border-right-color: transparent}
+  }
+
+  .animate_content {
+    animation: animate 3s ease;
+  }
+
+  .animate_content-in {
+    animation: animate-in 3s ease;
+  }
+
+  .hidden {
+    display: none; 
+  }
+
+  .fade_in {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    z-index: 10;
+  }
+
+  .disappear {
+      transform: rotate(20deg) translatey(-20px);
+      opacity: 0;
+      filter: blur(20px);
+  }
+
+
+  @keyframes disappearleft{
+    50% {transform: skew(50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
+  }
+  @keyframes disappearight{
+    50% {transform: skew(-50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
+  }
+
+
+
+  @keyframes animate {
+    10% {
+      transform: scale(1, 0.002);
+    }
+    35% {
+      transform: scale(0.2, 0.002);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }
+    85% {
+      transform: scale(1, 0.002);
+     opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

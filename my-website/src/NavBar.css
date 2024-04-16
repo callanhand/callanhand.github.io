@@ -1,0 +1,35 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.home-page {
+    color: #bfc1c3;
+}
+
+.home-page:hover {
+    border: 2px solid #bfc1c3; 
+}
+
+.resume-page {
+    color: white;
+}
+
+.resume-page:hover {
+    border: 2px solid #283618; 
+}
+
+.blade-page {
+    color: #283618;
+}
