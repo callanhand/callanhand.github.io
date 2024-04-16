@@ -1,16 +1,47 @@
 import './Projects.css'
 import hackathon from './videos/HackathonApp.mp4'
-import bird from "./backgroundImages/bird.jpg";
+import image2 from "./backgroundImages/image2.jpg";
 import { Link } from "react-router-dom";
+import { BsArrowRightCircle } from "react-icons/bs";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 function Projects() {
+   var divStyle = {
+      backgroundImage: 'url(' + image2 + ')',
+      width: '100vw',
+      height: '100%',
+      backgroundPosition: 'contain',
+      backgroundSize: '120%',
+      backgroundRepeat: 'no',
+
+   };
 
    return (
 
+
       <div>
 
+         <div className='projects-container'>
 
-         <div class="projects-container">
+            <div className='spacer'> 
+               <Link className='nav-button' to="/blade">
+                  <h2 className='project-title1'> <BsArrowReturnRight /> Beneath The Blades  </h2>
+               </Link>
+
+               <Link className='nav-button' to="/recycle">
+                  <h2 className='project-title2'> <BsArrowReturnRight /> Recycle! </h2>
+               </Link>
+
+               <Link className='nav-button' to="/blade">
+                  <h2 className='project-title3'> <BsArrowReturnRight /> Liberty PrepARe </h2>
+               </Link>
+
+               </div>
+         </div>
+
+
+
+         {/* <div class="projects-container">
 
             <div className='background'>
                <Link to="/blade">
@@ -44,7 +75,7 @@ function Projects() {
                
                </div>
             </div>
-         </div>
+         </div> */}
 
 
          {/* <div class="white-box"></div>
