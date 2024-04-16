@@ -82,7 +82,7 @@ div {
     height: 30vh;
     align-items: center;
     background-color: white;
-    background-image: url('./backgroundImages/noise.svg');
+    /* background-image: url('./backgroundImages/noise.svg'); */
 }
 
 .caption {
