@@ -4,10 +4,16 @@ import './Resume.css'
 function Resume() {
     return (
         <div className='resume-body'>
-            <div className='spacer'> </div>
-            <div className='resume'>
-                <h1> RESUME </h1>
+            <div className='resume-image'>
+            </div>
+            <div className='resume'> 
 
+                <div className='resume-title'> 
+                <h1> RESUME </h1>
+                <div className='pdf'> PDF </div>
+                </div> 
+
+            
                 <hr class="top-line" />
 
                 <h2> Experience </h2>
