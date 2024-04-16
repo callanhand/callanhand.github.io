@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7f389ee.css",
+    "main.js": "/static/js/main.fdce0094.js",
+    "static/media/sunset.png": "/static/media/sunset.dc0fbe070182ed13c2de.png",
+    "static/media/RecycleDemo.mp4": "/static/media/RecycleDemo.acebc617a37063c9d7b1.mp4",
+    "static/media/RecycleApp.mp4": "/static/media/RecycleApp.94d8585751f1581b3ad4.mp4",
+    "static/media/profilePicForest.jpg": "/static/media/profilePicForest.df66c9ae3e2914a6f025.jpg",
+    "static/media/vermont.jpg": "/static/media/vermont.59bab8ee689eafecfeb8.jpg",
+    "static/media/profilePic.jpg": "/static/media/profilePic.c5fbfd1cd31feff05f91.jpg",
+    "static/media/marsh.jpg": "/static/media/marsh.0282edf3f97c99ef6701.jpg",
+    "static/media/image1.jpg": "/static/media/image1.37f6248d76bff287482a.jpg",
+    "static/media/boat.jpg": "/static/media/boat.1b9392c69f3348a387b6.jpg",
+    "static/media/Recycle.png": "/static/media/Recycle.307a5b8a480e0bd4c70b.png",
+    "index.html": "/index.html",
+    "main.b7f389ee.css.map": "/static/css/main.b7f389ee.css.map",
+    "main.fdce0094.js.map": "/static/js/main.fdce0094.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7f389ee.css",
+    "static/js/main.fdce0094.js"
+  ]
+}
