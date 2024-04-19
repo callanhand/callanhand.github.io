@@ -20,11 +20,15 @@ function Home() {
         <div className='home'>
 
             <div className='image' style={divStyle}> 
-
-
                 <div className='title'>
                     <h1 className='header'> Callan Hand</h1>
                     <h3 className='sub-title'> Software Engineer | Outdoor Enthusiast | Creative </h3>
+                    <div className='sub-title-mobile'> 
+                    <h3> Software Engineer</h3>
+                    <h3> Outdoor Enthusiast</h3>
+                    <h3> Creative </h3>
+                    </div>
+
                 </div>
             </div>
             </div>
