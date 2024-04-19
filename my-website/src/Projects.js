@@ -1,6 +1,5 @@
 import './Projects.css'
-import hackathon from './videos/HackathonApp.mp4'
-import image2 from "./backgroundImages/image2.jpg";
+import image2 from "./backgroundImages/marsh.jpg";
 import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowReturnRight } from "react-icons/bs";

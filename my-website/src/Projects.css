@@ -110,7 +110,7 @@
     background-color: black;
     width: 400px;
     height: 400px;
-    background-image: url("./backgroundImages/grass.jpg");
+    /* background-image: url("./backgroundImages/grass.jpg"); */
   }
   
   .colorful-box {

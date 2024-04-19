@@ -33,3 +33,60 @@
 .blade-page {
     color: #283618;
 }
+
+.grid-btn, .x-btn {
+    display: none;
+}
+
+/* Mobile View  */
+@media (max-width: 700px) {
+    .grid-btn {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        color: #bfc1c3;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .x-btn.active {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        color: #bfc1c3;
+        font-size: 30px;
+        padding-top: 10px;
+        z-index: 10;
+    }
+
+    .nav-bar {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        padding-top: 40px;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        width: 0px;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        width: 270px;
+        transition: all 0.3s ease-in;
+      }
+    
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 60px;
+        z-index: 10;
+        background-color: white;
+        width: 30vw;
+    }
+}

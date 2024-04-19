@@ -1,10 +1,18 @@
-import React from 'react';
-import {  Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './NavBar.css'
+import { BsFillGridFill } from "react-icons/bs";
+import { BsXLg } from "react-icons/bs";
+import React, { useState } from "react";
 
-const NavBar= () => {
+const NavBar = () => {
   const location = useLocation();
   let navColor = '';
+
+  const [showNav, setShowNav] = useState(false);
+
+  const openNavBar = () => {
+    setShowNav(!showNav);
+  };
 
   if (location.pathname === '/') {
     navColor = 'home-page';
@@ -14,16 +22,23 @@ const NavBar= () => {
     navColor = 'blade-page';
   }
 
+
   return (
-  <div>
-    <div className='nav-bar'>
-    <h3> <Link className={`nav-button ${navColor}`} to="/">Home</Link> </h3>
-    <h3> <Link className={`nav-button ${navColor}`} to="/about">About Me </Link> </h3>
-    <h3> <Link className={`nav-button ${navColor}`} to="/projects">Projects</Link> </h3>
-    <h3> <Link className={`nav-button ${navColor}`} to="/resume">Resume</Link> </h3>
-    <h3> <Link className={`nav-button ${navColor}`} to="/contact">Contact</Link> </h3>
+    <div>
+      <div className={`nav-bar  ${showNav ? 'active' : ''}`} >
+        <h3> <Link className={`nav-button ${navColor}`} to="/">Home</Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/about">About Me </Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/projects">Projects</Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/resume">Resume</Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/contact">Contact</Link> </h3>
+      </div>
+
+      <div >
+        <BsFillGridFill className='grid-btn' onClick={openNavBar} />
+        <BsXLg className={`x-btn  ${showNav ? 'active' : ''}`} onClick={openNavBar}/>
+      </div>
+
     </div>
-    </div> 
   );
 }
 export default NavBar;
