@@ -8,15 +8,16 @@ import Resume from "./Resume"
 import Projects from "./Projects"
 import Blade from "./BeneathBlade.js"
 import Recycle from "./Recycle.js"
+import Home2 from "./Home2.js"
 
 
 function App() {
   return (<div>
 
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home2/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/resume" element={<Resume/>} />

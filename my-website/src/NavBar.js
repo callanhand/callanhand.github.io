@@ -24,21 +24,13 @@ const NavBar = () => {
 
 
   return (
-    <div>
-      <div className={`nav-bar  ${showNav ? 'active' : ''}`} >
-        <h3> <Link className={`nav-button ${navColor}`} to="/">Home</Link> </h3>
-        <h3> <Link className={`nav-button ${navColor}`} to="/about">About Me </Link> </h3>
-        <h3> <Link className={`nav-button ${navColor}`} to="/projects">Projects</Link> </h3>
+      <div className='nav-bar'>
+        {/* <h3> <Link className={`nav-button ${navColor}`} to="/">Home</Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/about">About Me </Link> </h3> */}
         <h3> <Link className={`nav-button ${navColor}`} to="/resume">Resume</Link> </h3>
+        <h3> <Link className={`nav-button ${navColor}`} to="/projects">Projects</Link> </h3>
         <h3> <Link className={`nav-button ${navColor}`} to="/contact">Contact</Link> </h3>
       </div>
-
-      <div >
-        <BsFillGridFill className='grid-btn' onClick={openNavBar} />
-        <BsXLg className={`x-btn  ${showNav ? 'active' : ''}`} onClick={openNavBar}/>
-      </div>
-
-    </div>
   );
 }
 export default NavBar;
