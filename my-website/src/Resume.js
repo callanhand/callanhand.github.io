@@ -4,7 +4,7 @@ import './Resume.css'
 function Resume() {
     return (
         <div className='resume-body'>
-            <div className='resume-image'>
+            <div className='resume-image'> 
             </div>
             <div className='resume'> 
 

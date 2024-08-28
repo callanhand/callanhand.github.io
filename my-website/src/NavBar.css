@@ -1,11 +1,7 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    justify-content: flex-end;
+    width: auto;
 }
 
 .nav-button {
@@ -15,7 +11,7 @@
 }
 
 .home-page {
-    color: #bfc1c3;
+    color: #283618; 
 }
 
 .home-page:hover {
@@ -38,7 +34,7 @@
     display: none;
 }
 
-/* Mobile View  */
+/* Mobile View  
 @media (max-width: 700px) {
     .grid-btn {
         display: flex;
@@ -90,3 +86,5 @@
         width: 30vw;
     }
 }
+
+*/

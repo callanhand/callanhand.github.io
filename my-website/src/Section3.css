@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Monoton&family=Vast+Shadow&display=swap');
+
+.slide {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 3rem;
+}
+
+.project {
+    transition: transform 2s ease-in-out;
+}
+
+.section3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E9D8A6;
+}
+
+.section3 h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.project1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project1, .project2, .project3 {
+    height: 40vh;
+    flex: 1;
+    margin: 10px;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project1:hover {
+    background-color: #E09F3E; 
+}
+
+.ishover1 {
+    color:  #335C67;
+}
+
+.project2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project2:hover{
+    background-color: #94D2BD; 
+}
+
+.ishover2 {
+    color: yellow;
+}
+
+.project3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project3:hover {
+    background-color: #9B2226;
+}
+
+.project1 div {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    /* color: #335C67; */
+}
+
+.project2 div {
+    color: black;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+}
+
+.project3 div {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-size: 300%;
+    font-style: normal;
+    color: black;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 50vh;
+    font-size: 300%;
+    z-index: 30;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 0;
+    bottom: 50vh;
+    font-size: 300%;
+    z-index: 30;
+}
+
+.right-arrow:hover {
+    font-size: 350%;
+}
+
+/* .project2-left {
+    background-color: #9E2A2B;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+}
+
+.project2-right {
+    background-color: #540B0E;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    right: 0;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+} */
+
+.project2-right.active, .project2-left.active {
+    animation: slide 3s ease forwards;
+}
+
+.project2-title-left, .project2-title-right  {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+}
+
+.project2-title-left {
+    color: #540B0E;
+}
+
+.project2-title-right {
+    color:  #9E2A2B;
+}
+
+.project2-title-left, .project2-title-right{
+    display: none;
+}
+
+.project2-title-left.active, .project2-title-right.active{
+    display: block;
+}
+
+/* .project3-left {
+    background-color: #94d2bd;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project3-right {
+    background-color: #ca6702;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    right: 0;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+} */
+
+.project3-right.active, .project3-left.active {
+    animation: slide 3s ease forwards;
+}
+
+
+@keyframes slide {
+    0% {
+        height: 0;
+      }
+      100% {
+        height: 100vh;
+        z-index: 10;
+      }
+}
+
+@keyframes slideRight {
+    0% {
+        height: 100vh;
+      }
+      100% {
+        height: 0;
+        z-index: 10;
+      }
+}
+
+.project1-title-left {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 350%;
+    color: #335C67;
+}
+
+.project1-title-right {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 350%;
+    color: #E09F3E;
+}
+
+/* .project1-title-right.active {
+    animation: fadeOut 1.5s ease forwards;
+}
+
+.project1-title-left.active {
+    animation: fadeOut 1.5s ease forwards;
+} */
+
+@keyframes fadeOut {
+    0% {
+       font-size: 350%;
+      }
+      100% {
+        font-size: 0;
+        opacity: 0;
+      }
+    
+}
+
+@keyframes slideBottom {
+    0% {
+       transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    
+}
