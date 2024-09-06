@@ -1,124 +1,119 @@
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+/* sub text font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-.home {
-    width: 100vw;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.title {
-   margin-top: 12vh;
-   margin-left: 20px;
-}
-
-.sub-title {
-    color: #bfc1c3;
-    margin-left: 80px;
-    opacity: 0;
-    animation: fade-in 2s ease-in-out 2s forwards;
-}
-
-.header {
-    color: #bfc1c3;
-    font-family: "Bungee Shade", sans-serif;
+.name-text {
+    font-size: 6em;
+    visibility: hidden; /* hide text on load */
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 350%;
-    margin: 50px;
-    margin-bottom: 0px;
+    color: #321b12;
+  }
+  .name-text .text-wrapper {
+    display: inline-block;
+    overflow: hidden;
+  }
+  .name-text .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+  }
+
+  .intro-text {
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #321b12;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: 3s 2s forwards showtext; 
+  }
+
+  .text-container {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1em;
+    color: #321b12;
+    text-decoration: none;
+
+    border: 2px solid #321b12;
+    background-color: transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    opacity: 0;
+    animation: 3s 2s forwards showtext; 
+}
+
+.btn:hover {
+    background-color: #321b12;
+    color: white;
+}
+
+  /* inital background while image loads */
+.home-container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#b2c2cf, #c9c6be);
+    background-size: cover 100%;
+    z-index: 1;
+}
+
+ .image-container {
+    background-image: url('./backgroundImages/sunset.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat; 
+    background-size: cover 100%;
+    animation: 7s 3s forwards animateImage; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    top: -200px;
-    animation: slideIn 2s ease-in-out forwards; /* Animation */
-}
+    z-index: 1;
+} 
 
-/* Keyframes for slide-in animation */
-@keyframes slideIn {
-  from {
-    top: -200px; /* Start off-screen */
-  }
-  to {
-    top: 0; /* Slide in to top of the page */
-  }
-}
-
-/* Keyframes for slide-in animation */
-@keyframes fade-in {
+@keyframes animateImage {
     from {
-      opacity: 0; /* Start off-screen */
+      background-position: 50% 0%;
     }
     to {
-        opacity: 1; /* Slide in to top of the page */
+        background-position: 50% 40%;
     }
   }
 
-
-.circle-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    background-color: whitesmoke;
-    height: 30vh;
-}
-
-.icon {
-    width: 150px; 
-    height: 200px; 
-    color: #bfc1c3; 
-    margin: 20px; 
-}
-
-div {
-    font-family: Optima;
-    font-size: large;
-}
-
-.caption-container {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 30vh;
-    align-items: center;
-    background-color: white;
-    /* background-image: url('./backgroundImages/noise.svg'); */
-}
-
-.caption {
-    width: 100vw; 
-    color: #5484a8;
-    text-align: center;
-    font-size: x-large;
-    border: 2px solid #5484a8; 
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    height: 100px;
-}
-
-/* Mobile View  */
-@media (max-width: 700px) {
-
-  .title {
-    margin-left: 0px;
+  @keyframes showtext {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
   }
 
-  .header {
-    margin: 5px;
-  }
-  
-  .sub-title {
-    margin-left: 10px;
+  /* Mobile Display */
+
+  @media (max-width: 750px) {
+    .name-text {
+        font-size: 3em;
+    }
+
+    .intro-text {
+        font-size: 1em;
+    }
 }
-
-}
-
-@media (max-width: 400px) {
-
-  .sub-title {
-    display: none;
-  }
-
-}
-

@@ -41,8 +41,10 @@ const Contact = () => {
    return (
       <div className='contact-page'>
          <div className='form'>
-            <h2> Get In Touch</h2>
-            <form className='form-content' onSubmit={sendEmail}>
+            <div class="vertical-line"> </div>
+            <div class="stamp"> </div>
+            {/* <h2> Get In Touch</h2>
+             <form className='form-content' onSubmit={sendEmail}>
                <div className='input-box'>
                   <label>Name: </label>
                   <input type="text" name="user_name" />
@@ -58,7 +60,7 @@ const Contact = () => {
                   {stateMessage && <p>{stateMessage}</p>}
                </div>
 
-            </form>
+            </form> */}
          </div>
          <div className='contact-info'>
             <a href="https://www.linkedin.com/in/callan-hand-81304818a/" target="_blank" ><BsLinkedin className='contact-icon' /></a>

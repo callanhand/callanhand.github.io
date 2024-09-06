@@ -23,6 +23,10 @@
     font-weight: 600;
 }
 
+.about-page.about-btn {
+    font-weight: 600;
+}
+
 .nav-button:hover {
   font-size: larger;  
 }
