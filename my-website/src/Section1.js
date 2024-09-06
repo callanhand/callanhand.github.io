@@ -103,13 +103,21 @@ const Section1 = () => {
 
     return (
         <div className='section1-container'>
-            <div className='down-arrow'> 
-            <BsArrowDown />
+            <div className='down-arrow'>
+                <BsArrowDown />
             </div>
+
             <div className='about-me-section'>
                 <div className='section1-navbar'>
                     <NavBar />
                 </div>
+
+                <h1 class="ml7">
+                    <span class="text-wrapper">
+                        <span class="letters">Reality is broken</span>
+                    </span>
+                </h1>
+
                 <h1> Hi I'm Callan </h1>
                 <p> A passonate and creative software enigneer.
                     ggjn ks okgnd ioghignd josdbgsdnojbfjszboj okgnd

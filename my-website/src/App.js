@@ -13,11 +13,12 @@ import Home2 from "./Home2.js"
 
 function App() {
   return (<div>
+    {/* <Intro /> */}
 
     <Router>
-      {/* <NavBar /> */}
+    <NavBar />
       <Routes>
-        <Route exact path="/" element={<Home2/>} />
+        <Route exact path="/" element={<About/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/resume" element={<Resume/>} />

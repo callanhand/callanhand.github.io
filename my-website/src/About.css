@@ -1,41 +1,118 @@
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* sub text font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.name-text {
+    font-size: 6em;
+    visibility: hidden; /* hide text on load */
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #321b12;
+  }
+  .name-text .text-wrapper {
+    display: inline-block;
+    overflow: hidden;
+  }
+  .name-text .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+  }
+
+  .intro-text {
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #321b12;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: 3s 2s forwards showtext; 
+  }
+
+  .text-container {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1em;
+    color: #321b12;
+
+    border: 2px solid #321b12;
+    background-color: transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    opacity: 0;
+    animation: 3s 2s forwards showtext; 
+}
+
+.btn:hover {
+    background-color: #321b12;
+    color: white;
+}
+
+  /* inital background while image loads */
 .about-container {
     height: 100vh;
     width: 100%;
+    background-image: linear-gradient(#b2c2cf, #c9c6be);
+    background-size: cover 100%;
+    z-index: 1;
+}
+
+ .image-container {
     background-image: url('./backgroundImages/sunset.png');
-    background-position: 50% 40%;
+    background-position: 0px 0px;
     background-repeat: no-repeat; 
     background-size: cover 100%;
+    animation: 7s 3s forwards animateImage; 
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+} 
 
-.about-me {
-    width: 600px;
-    margin-bottom: 200px;
-    margin-left: 150px;
-}
+@keyframes animateImage {
+    from {
+      background-position: 50% 0%;
+    }
+    to {
+        background-position: 50% 40%;
+    }
+  }
 
-.name {
-    margin-left: 0;
-}
+  @keyframes showtext {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
 
+  /* Mobile Display */
 
-.profile-pic {
-    width: 300px;
-    height: 400px;
-    background-color: black;
-    background-image: url('./backgroundImages/profilePic.jpg');
-    background-size: cover;
-    background-position: 50% 40%;
-    margin-bottom: 200px;
-    /* margin-top: 15vh;
-    margin-left: 10vw; */
-}
+  @media (max-width: 750px) {
+    .name-text {
+        font-size: 3em;
+    }
 
-.profile-pic:hover {
-    background-image: url('./backgroundImages/profilePicForest.jpg');
-    background-size: 250%;
-    background-position: 50% 80%;
+    .intro-text {
+        font-size: 1em;
+    }
 }

@@ -1,32 +1,70 @@
 import './About.css';
+import React, { useEffect } from 'react';
+import anime from 'animejs/lib/anime.es.js';
 
 function About() {
 
-    return (
+  useEffect(() => {
+    // Set a timeout to delay the animation by 5 seconds
+    const timer = setTimeout(() => {
+      // Wrap every letter in a span
+      var textWrapper = document.querySelector('.name-text .letters');
+      if (textWrapper) {
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-       <div> 
+        // Set text to visible just before animation starts
+        document.querySelector('.name-text').style.visibility = 'visible';
 
-         <div className='about-container'>  
+        // Animation
+        anime.timeline({ loop: true })
+          .add({
+            targets: '.name-text .letter',
+            translateY: ["1.1em", 0],
+            translateX: ["0.55em", 0],
+            translateZ: 0,
+            rotateZ: [180, 0],
+            duration: 750,
+            easing: "easeOutExpo",
+            delay: (el, i) => 100 * i
+          }).add({
+            targets: '.name-text',
+            duration: 10000, // 10-second pause before the next loop
+            easing: "linear",
+            opacity: 1 // Keep it at full opacity
+          });
+      }
+    }, 1000); // 1-second delay 
 
-         <div className='profile-pic'> </div>
+    // Cleanup timer when component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
 
-         <div className='about-me'> 
+  return (
 
-         <h2 className='name'> Hi! I'm Callan</h2>
-         
-         In the heart of the bustling city, 
-         amidst the cacophony of car horns and the symphony of urban life, 
-         there stood a quaint little bookstore, its facade adorned with 
-         ivy creeping up the brick walls like nature reclaiming its territory. 
-         Inside, the air was heavy with the scent of old paper and the soft murmur of pages being turned. Sunlight filtered through the dusty windows, casting a warm glow on the rows of bookshelves, each one a portal to another world waiting to be explored. In one corner, a solitary figure sat nestled in a cozy armchair, lost in the enchantment of a well-worn novel, oblivious to the passage of time.
-         </div>
-         
-         </div>
+    <div>
+      <div class="about-container">
+        <div class="image-container">
 
-       </div>
-  
+          <div class="text-container">
+            <h1 class="name-text">
+              <span class="text-wrapper">
+                <span class="letters">HI! I'M CALLAN</span>
+              </span>
+            </h1>
 
-    );
-  }
-  
-  export default About;
+            <p class="intro-text"> I'm a creative software engineer with a passion for the outdoors. </p>
+
+            <button class="btn"> Learn More </button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  );
+}
+
+export default About;
