@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8d045eb.css",
-    "main.js": "/static/js/main.d7217711.js",
+    "main.css": "/static/css/main.4ca89a28.css",
+    "main.js": "/static/js/main.869257ea.js",
     "static/media/sunset.png": "/static/media/sunset.dc0fbe070182ed13c2de.png",
     "static/media/RecycleDemo.mp4": "/static/media/RecycleDemo.acebc617a37063c9d7b1.mp4",
     "static/media/RecycleApp.mp4": "/static/media/RecycleApp.94d8585751f1581b3ad4.mp4",
@@ -11,11 +11,11 @@
     "static/media/stamp.png": "/static/media/stamp.a748b7e1e00cc731b24a.png",
     "static/media/postcardPaper.jpg": "/static/media/postcardPaper.a4f0284767dc000d1ff0.jpg",
     "index.html": "/index.html",
-    "main.e8d045eb.css.map": "/static/css/main.e8d045eb.css.map",
-    "main.d7217711.js.map": "/static/js/main.d7217711.js.map"
+    "main.4ca89a28.css.map": "/static/css/main.4ca89a28.css.map",
+    "main.869257ea.js.map": "/static/js/main.869257ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8d045eb.css",
-    "static/js/main.d7217711.js"
+    "static/css/main.4ca89a28.css",
+    "static/js/main.869257ea.js"
   ]
 }
