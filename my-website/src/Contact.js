@@ -59,7 +59,7 @@ const Contact = () => {
 
             <div className='submit'>
                <input type="submit" value="Send" disabled={isSubmitting} class="submit-btn"/>
-               {stateMessage && <p>{stateMessage}</p>}
+               {stateMessage && <p class="msg-sent">{stateMessage}</p>}
             </div>
 
          </form>

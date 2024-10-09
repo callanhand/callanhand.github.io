@@ -1,8 +1,147 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .about-wrapper {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(#b2c2cf, #ccb7aa);
-  background-size: cover 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  background-size: cover 130%;
+
+}
+
+.about-container {
+  height: 100vh;
+  width: 100%;
+  align-self: center;
+  background-color: #b2c2cf;
+}
+
+.about-container2 {
+  background-color: #b2c2cf;
+  height: 50vh;
+}
+
+.string {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 3rem;
+  border-top: 2px solid #555; /* The string */
+}
+
+.item {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  margin-top: 5rem;
+  filter: grayscale(100%);
+  transition: all 0.35s;
+  animation: appear 1s 0.5s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0; /* Start off-screen left */
+  }
+  to {
+    opacity: 1; /* Move to original position */
+  }
+}
+
+/* Rotations applied to items */
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+}
+
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.polaroid > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #321b12;
+}
+
+/* Create the clothespin effect */
+.item:before {
+  content: '';
+  width: 2px;
+  height: 1.5rem;
+  background-color: #555;
+  position: absolute;
+  top: -1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item:after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: #ccc;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.1rem 0.1rem 0 0;
+  box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+
+/* When hovering, reset the transformation */
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+
+
+  /* Mobile Display */
+
+  @media (max-width: 900px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
+
 }
