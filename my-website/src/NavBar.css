@@ -1,29 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 .nav-bar {
     display: flex;
     flex-direction: row;
     width: auto;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin-right: 15px;
 }
 
 .nav-button {
-    padding: 10px;
-    margin: 10px;
+    padding-right: 2px;
     text-decoration: none;
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.home-page {
-    color: #283618; 
+.home-page.home-btn {
+    font-weight: 600;
 }
 
-.home-page:hover {
-    border: 2px solid #bfc1c3; 
+.about-page.about-btn {
+    font-weight: 600;
+}
+
+.nav-button:hover {
+  font-size: larger;  
 }
 
 .resume-page {
     color: black;
-}
-
-.resume-page:hover {
-    border: 2px solid #283618; 
 }
 
 .blade-page {

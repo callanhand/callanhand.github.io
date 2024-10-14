@@ -7,6 +7,7 @@ import { BsEnvelope } from "react-icons/bs";
 const Contact = () => {
    const [isSubmitting, setIsSubmitting] = useState(false);
    const [stateMessage, setStateMessage] = useState(null);
+
    const sendEmail = (e) => {
       e.persist();
       e.preventDefault();
@@ -40,30 +41,32 @@ const Contact = () => {
    };
    return (
       <div className='contact-page'>
-         <div className='form'>
-            <h2> Get In Touch</h2>
-            <form className='form-content' onSubmit={sendEmail}>
-               <div className='input-box'>
-                  <label>Name: </label>
-                  <input type="text" name="user_name" />
-                  <label>Email: </label>
-                  <input type="email" name="user_email" />
-               </div>
-               <div className='input-box-message'>
-                  <label className='message'>Message: </label>
-                  <textarea name="message" />
-               </div>
-               <div className='submit'>
-                  <input type="submit" value="Send" disabled={isSubmitting} />
-                  {stateMessage && <p>{stateMessage}</p>}
-               </div>
+         <form className='form-content' onSubmit={sendEmail}>
 
-            </form>
-         </div>
-         <div className='contact-info'>
+            <div className='input-box-message'>
+               <label class="message">Message: </label>
+               <textarea autofocus name="message" className='msg-txt-area' />
+            </div>
+
+            <div class="vertical-line"> </div>
+
+            <div class="stamp"> </div>
+
+            <div className='input-box'>
+               <label class="name">Name: <input type="text" name="user_name" class="name-input" /> </label>
+               <label class="email">Email: <input type="email" name="user_email" class="email-input" /> </label>
+            </div>
+
+            <div className='submit'>
+               <input type="submit" value="Send" disabled={isSubmitting} class="submit-btn"/>
+               {stateMessage && <p>{stateMessage}</p>}
+            </div>
+
+         </form>
+         {/* <div className='contact-info'>
             <a href="https://www.linkedin.com/in/callan-hand-81304818a/" target="_blank" ><BsLinkedin className='contact-icon' /></a>
             <div className='contact-email'> <BsEnvelope className='contact-icon' /> <span className='email'> callanhand4@outlook.com </span></div>
-         </div>
+         </div> */}
       </div>
    );
 };
