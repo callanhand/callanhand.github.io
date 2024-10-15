@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ca89a28.css",
-    "main.js": "/static/js/main.869257ea.js",
+    "main.css": "/static/css/main.5250f9ed.css",
+    "main.js": "/static/js/main.e917bff4.js",
     "static/media/sunset.png": "/static/media/sunset.dc0fbe070182ed13c2de.png",
     "static/media/RecycleDemo.mp4": "/static/media/RecycleDemo.acebc617a37063c9d7b1.mp4",
     "static/media/RecycleApp.mp4": "/static/media/RecycleApp.94d8585751f1581b3ad4.mp4",
     "static/media/marsh.jpg": "/static/media/marsh.0282edf3f97c99ef6701.jpg",
-    "static/media/image1.jpg": "/static/media/image1.37f6248d76bff287482a.jpg",
-    "static/media/Recycle.png": "/static/media/Recycle.307a5b8a480e0bd4c70b.png",
+    "static/media/me.jpeg": "/static/media/me.3621feca1f7009fe20bf.jpeg",
+    "static/media/bike.jpeg": "/static/media/bike.2a4f605383fd522357d8.jpeg",
     "static/media/stamp.png": "/static/media/stamp.a748b7e1e00cc731b24a.png",
     "static/media/postcardPaper.jpg": "/static/media/postcardPaper.a4f0284767dc000d1ff0.jpg",
     "index.html": "/index.html",
-    "main.4ca89a28.css.map": "/static/css/main.4ca89a28.css.map",
-    "main.869257ea.js.map": "/static/js/main.869257ea.js.map"
+    "main.5250f9ed.css.map": "/static/css/main.5250f9ed.css.map",
+    "main.e917bff4.js.map": "/static/js/main.e917bff4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca89a28.css",
-    "static/js/main.869257ea.js"
+    "static/css/main.5250f9ed.css",
+    "static/js/main.e917bff4.js"
   ]
 }
