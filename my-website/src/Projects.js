@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { BsArrowReturnRight } from "react-icons/bs";
 import { useEffect } from 'react';
+import recycleVideo from "./videos/RecycleDemo.mp4";
+import recycleVideo2 from "./videos/RecycleApp.mp4";
 
 function Projects() {
 
@@ -49,29 +51,49 @@ function Projects() {
 
       <div> 
          <div class="myslides">
-            <iframe src="https://www.youtube.com/embed/c1hXOPZYhjA"
+            <iframe src="https://blades-remix-part2.glitch.me/"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <h2> BEHIND THE KILL: TAYLOR LOUIS </h2>
-            <p>Taylor Louis is dominant on the volleyball court and I wanted to know why. So, I teamed up with the
-                Marquette physics department to go beyond the stats to get to the crux of Louis' dominance. </p>
+            <h2>  BENEATH THE BLADES </h2>
+            <p> Beneath the Blades is a virtual reality game designed to emulate
+               what it would feel like to live at a near microscopic level. Gain a new pespective on
+               what it would be like live beneath the blades and how our two envrionments interact with each other.
+
+               This games was a collaberation between myself and two others. I was responsible for coding
+               all the game controls, movements, and interactions. The game was developed with Javascript. The
+               other two people created the designs and landscape.
+
+               This app was designed to be a fun way for kids to learn about what items can be recylced.
+               It uses augmented reality to detect if a recycable symbol is present and if so items will begin to
+               fall.
+               I developed the app using Unity and Android Development studios.
+            </p>
         </div>
 
 
         <div class="myslides">
-            <iframe src="https://www.youtube.com/embed/eOpNM9RaDAI"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <h2> NBC SPORTS BOSTON SPORTS CAST </h2>
+          <div className='mountain-container'> 
+          <div className='design-pic'>  </div>
+          <div className='app-vid'>  </div>
+
+            </div>
+            <h2> TO THE MOUNTAINS </h2>
             <p> While interning for NBC Sports Boston, I was given the opportunity to record a mock newscast.</p>
         </div>
 
         <div class="myslides">
-            <iframe src="https://www.youtube.com/embed/s5HXX3vyd1I"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             <iframe src={recycleVideo}
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <h2> MARQUETTE TAKES DOWN #1 VILLANOVA</h2>
             <p> My video report following Marquette basketball's victory over #1Villanova.</p>
+        </div>
+        <div class="myslides">
+             <iframe src="/gpx_routes_map.html"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h2> BIKE TRIP MAP </h2>
+            <p> Created a python script to visualize my bike pack across the country. </p>
         </div>
 
         <div id="controls">
@@ -79,11 +101,11 @@ function Projects() {
             <button class="button" id="right"> &#10095; </button>
         </div>
 
-        <h1 class="header"> Video Portfolio </h1>
         <div id="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
 
       </div> 

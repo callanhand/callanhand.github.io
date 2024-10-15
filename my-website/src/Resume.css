@@ -1,27 +1,93 @@
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-.resume-body {
-    width: 100vw;
-    height: 55vh;
-    /* background-image: url('./backgroundImages/vermont.jpg'); */
-    background-position: 50% 35%;
-}
+/* sub text font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-.resume-image {
-    width: 100%;
-    height: 100%;
-}
 
 .resume {
-    background-color: #FEFAE0;
-    padding-top: 40px;
+    background-color: #c1c0be;
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-/* .resume-title {
+.resume-title {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #321b12;
+    font-size: 4.5em;
+    overflow: hidden;
+}
+
+.resume-title div {
+    animation: resume-appear 2s forwards;
+}
+
+.resume-body {
+    visibility: hidden;
+    animation: resume-body-appear 3s .5s forwards;
+}
+
+.top-line {
+    background:#676878;
+    height: 5px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #321b12;
+    font-size: 2.5em;
+}
+
+.section-line {
+    background: #676878;
+    height: 3px;
+    border: none;
+}
+
+.flex-grid {
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #321b12;
+    font-size: 1.2em;
     display: flex;
-    display: row;
-    justify-content: space-between;
-    transform: translate(0px, 0px);
-} */
+}
+
+.col {
+    flex: 2;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .col1, .col3 {
+    padding: 10px;
+    width: 15vw;
+  }
+
+  .col1 {
+    font-weight: bold;
+  }
+
+.divider {
+    background: #676878;
+    height: 2px;
+    border: none;
+}
+
+li {
+    padding: 3px;
+}
+
 
 .pdf {
     margin-right: 20px;
@@ -35,65 +101,23 @@
     border: 2px solid #283618;
 }
 
-/* div {
-    font-family: Optima;
-    font-size: large;
-    color: #283618;
-} */
-
-/* h1, h2 {
-   /* margin-left: 20px; 
-   margin-top: 0px;
-   color: #283618; 
-} */
-
-li {
-    padding: 5px;
-}
-
-.top-line {
-    background: #606C38;
-    height: 5px;
-    border: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-}
-
-/* .section-line {
-    background: #606C38;
-    height: 3px;
-    border: none;
-    margin-left: 20px;
-    margin-right: 20px;
-} */
-
-/* hr {
-    background: #606C38;
-    height: 2px;
-    border: none;
-    margin-left: 20px;
-    margin-right: 20px;
-} */
-
-.flex-grid {
-    color: #6F343C;
-}
-
-.flex-grid {
-    display: flex;
-  }
-  .col {
-    flex: 2;
-    padding: 10px;
-    margin-left: 10px;
-  }
-  .col1, .col3 {
-    padding: 10px;
-    margin-left: 10px;
-    width: 15vw;
+@keyframes resume-appear {
+    from {
+      transform: translateY(100px)
+    }
+    to {
+      transform: translateY(0)
+    }
   }
 
-  .col1 {
-    font-weight: bold;
+
+@keyframes resume-body-appear {
+    from {
+      visibility: visible;
+      transform: translateY(700px)
+    }
+    to {
+        visibility: visible;
+      transform: translateY(0)
+    }
   }

@@ -53,7 +53,7 @@ function Home() {
               </span>
             </h1>
 
-            <p class="intro-text"> I'm a creative software engineer with a passion for the outdoors. </p>
+            <p class="intro-text"> I'm a creative software engineer with a passion for the outdoors.</p>
 
             <Link class="btn" to="/about"> Learn More </Link>
 

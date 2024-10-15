@@ -7,8 +7,6 @@ import Contact from "./Contact"
 import Resume from "./Resume"
 import Projects from "./Projects"
 import Blade from "./BeneathBlade.js"
-import Recycle from "./Recycle.js"
-import Home2 from "./Home2.js"
 
 
 function App() {
@@ -24,7 +22,6 @@ function App() {
         <Route path="/resume" element={<Resume/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/blade" element={<Blade/>} />
-        <Route path="/recycle" element={<Recycle/>} />
       </Routes>
     </Router>
     </div>

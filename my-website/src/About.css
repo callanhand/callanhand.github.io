@@ -1,37 +1,109 @@
+/* title font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-.about-wrapper {
+/* .about-wrapper {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the content */
+  justify-content: center; /* Center the content 
   background-position: 50% 10%;
   background-repeat: no-repeat;
   background-size: cover 130%;
-
-}
+} */
 
 .about-container {
   height: 100vh;
-  width: 100%;
+  width: 100 vw;
   align-self: center;
-  background-color: #b2c2cf;
+  background-image: url('./backgroundImages/sunset.png');
+  background-repeat: no-repeat; 
+  background-size: cover 100%;
+  background-position: 50% 40%;
+
+  position: relative;
 }
 
-.about-container2 {
+.about-vertical-line div, .outdoor-vertical-line div, .work-vertical-line div {
+  color: #321b12;
+  font-size: 1.6em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #321b12;
+}
+
+.work-vertical-line div:hover, .about-vertical-line div:hover, .outdoor-vertical-line div:hover {
+  font-size: 2em;
+}
+
+.outdoor-vertical-line {
+  border-left: 3px solid  #321b12;
+  height: 250px;
+  position: absolute;
+  top: 38%;  
+  left: 23%; 
+}
+
+.outdoor-title {
+  position: absolute; 
+  top: -50px; 
+  transform: translateX(-20%); 
+  width: 400px;
+}
+
+.work-vertical-line {
+  border-left: 3px solid  #321b12;
+  height: 200px;
+  position: absolute;
+  top: 55%;  
+  left: 43%; 
+}
+
+.work-title {
+  position: absolute; 
+  top: -50px; 
+  transform: translateX(-50%); 
+  width: auto;
+}
+
+.about-vertical-line {
+  border-left: 3px solid  #321b12;
+  height: 200px;
+  position: absolute;
+  top: 44%;  
+  left: 73%; 
+}
+
+.about-title {
+  position: absolute; 
+  top: -50px; 
+  transform: translateX(-50%); 
+  width: auto;
+}
+
+/* .outdoor-pin {
+  size: 5x;
+  position: absolute;
+  top: 73%;  /* Adjust this value to place the pin vertically 
+  left: 33%; /* Adjust this value to place the pin horizontally 
+  transform: translate(-50%, -50%);
+} */
+
+/* .about-container2 {
   background-color: #b2c2cf;
   height: 50vh;
-}
+} */
 
-.string {
+/* .string {
   width: 90%;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin-top: 3rem;
-  border-top: 2px solid #555; /* The string */
+  border-top: 2px solid #555; /* The string 
 }
 
 .item {
@@ -47,14 +119,14 @@
 
 @keyframes appear {
   from {
-    opacity: 0; /* Start off-screen left */
+    opacity: 0; /* Start off-screen left 
   }
   to {
-    opacity: 1; /* Move to original position */
+    opacity: 1; /* Move to original position 
   }
 }
 
-/* Rotations applied to items */
+/* Rotations applied to items 
 .item:nth-of-type(4n+1) {
   transform: scale(0.8, 0.8) rotate(5deg);
 }
@@ -91,7 +163,7 @@
   color: #321b12;
 }
 
-/* Create the clothespin effect */
+/* Create the clothespin effect 
 .item:before {
   content: '';
   width: 2px;
@@ -116,7 +188,7 @@
   box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.3);
 }
 
-/* When hovering, reset the transformation */
+/* When hovering, reset the transformation 
 .item:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
@@ -134,7 +206,7 @@
   right: 5%;
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
   transition: all 0.35s;
-}
+} */
 
 
   /* Mobile Display */

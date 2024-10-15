@@ -1,18 +1,37 @@
 
-.blades-container {
-    height: 100%;
-    margin-top: 10vh;
+.bike-trip-container {
+    height: 100vh;
+    width: 100%;
+    background-color: orange;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.map-desc {
+   flex-grow: 1;
+   display: flex;
+   align-items: flex-end;
+}
+
+.map-iframe {
+    flex-grow: 1;
+    margin-bottom: 50px;
+    height: 60%;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.casco-bay-trail-container {
+    background-color: blue;
+    height: 100vh;
     width: 100%;
 }
 
-.blades-container iframe {
-    width: 60%;
-}
-
-.description-container {
-    margin: 50px;
+.nh-mountains {
+    background-color: green;
+    height: 100vh;
+    width: 100%;
 }

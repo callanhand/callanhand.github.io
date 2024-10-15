@@ -3,20 +3,17 @@ import './Resume.css'
 
 function Resume() {
     return (
-        <div className='resume-body'>
-            <div className='resume-image'> 
+        <div className='resume'>
+
+            <div className='resume-title'>
+                <div> RESUME </div>
+                {/* <div className='pdf'> PDF </div> */}
             </div>
-            <div className='resume'> 
 
-                <div className='resume-title'> 
-                <h1> RESUME </h1>
-                <div className='pdf'> PDF </div>
-                </div> 
-
-            
+            <div className='resume-body'>
                 <hr class="top-line" />
 
-                <h2> Experience </h2>
+                <div className='section-title'> Experience </div>
 
                 <hr class="section-line" />
 
@@ -38,7 +35,7 @@ function Resume() {
                     <div class="col3"> Freeport, ME</div>
                 </div>
 
-                <hr />
+                <hr className='divider' />
 
                 <div class="flex-grid">
                     <div class="col1"> Aug. 2021 - Aug. 2022 </div>
@@ -58,7 +55,7 @@ function Resume() {
                     <div class="col3"> Gorham, NH </div>
                 </div>
 
-                < hr />
+                <hr className='divider' />
 
                 <div class="flex-grid">
                     <div class="col1"> May 2020 - Aug. 2020 </div>
@@ -92,7 +89,7 @@ function Resume() {
                     <div class="col3"> Harrisonburg, VA </div>
                 </div>
 
-                <hr />
+                <hr className='divider' />
 
                 <div class="flex-grid">
                     <div class="col1"> Spring 2019  </div>
@@ -104,7 +101,6 @@ function Resume() {
                     <div class="col3"> Edinburgh, Scotland</div>
                 </div>
             </div>
-
         </div>
     );
 }
