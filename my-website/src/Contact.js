@@ -53,7 +53,7 @@ const Contact = () => {
             <div class="stamp"> </div>
 
             <div className='input-box'>
-               <label class="name">Name: <input type="text" name="user_name" class="name-input" /> </label>
+               <label class="name">Name: <input type="text" name="from_name" class="name-input" /> </label>
                <label class="email">Email: <input type="email" name="user_email" class="email-input" /> </label>
             </div>
 
@@ -63,10 +63,10 @@ const Contact = () => {
             </div>
 
          </form>
-         {/* <div className='contact-info'>
+         <div className='contact-info'>
             <a href="https://www.linkedin.com/in/callan-hand-81304818a/" target="_blank" ><BsLinkedin className='contact-icon' /></a>
             <div className='contact-email'> <BsEnvelope className='contact-icon' /> <span className='email'> callanhand4@outlook.com </span></div>
-         </div> */}
+         </div>
       </div>
    );
 };

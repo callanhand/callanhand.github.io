@@ -136,46 +136,8 @@
     position: absolute;
     bottom: 50px;
     right: 0;
+    width: 150px;
 }
-
-/* .input-box {
-    padding: 20px;
-    font-size: 1.2em;
-    text-align: flex-end;
-} */
-
-/* .input-box-message {
-    padding: 20px;
-    font-size: 1.2em;
-    width: 50%;
-    height: 70%;
-}
-
-.input-box label {
-    padding: 10px;
-}
-
-.input-box-message label {
-    padding: 10px;
-}
-
-.input-box-message textarea, input {
-    font-size:30pt;
-    outline: none;
-    border-radius: 5px;
-    height: 70%;
-} */
-
-/* .input-box-message textarea {
-    height: 86px;
-    width: 100%;
-} */
-
-/* .input-box textarea, input {
-    font-size:15pt;
-    outline: none;
-    border-radius: 5px;
-} */
 
 a {
     color: black;

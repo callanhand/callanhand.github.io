@@ -6,7 +6,7 @@ import { BsArrowDown } from "react-icons/bs";
 const pictures = [
     {
         id: 1,
-        src: "https://live.staticflickr.com/65535/53664068362_974fa7754b_k.jpg",
+        src: "https://live.staticflickr.com/65535/54081433218_83a2f1345f_h.jpg",
     },
     {
         id: 2,
@@ -26,15 +26,15 @@ const pictures = [
     },
     {
         id: 6,
-        src: "https://live.staticflickr.com/65535/53665426630_1444505dfc_h.jpg",
+        src: "https://live.staticflickr.com/65535/54080305782_7d0b7b275e_h.jpg",
     },
     {
         id: 7,
-        src: "https://live.staticflickr.com/65535/53664088892_390260b5b8_h.jpg",
+        src: "https://live.staticflickr.com/65535/53664088892_390260b5b8_h.jpg",  
     },
     {
         id: 8,
-        src: "https://live.staticflickr.com/65535/53664083942_232f71a79e_h.jpg",
+        src: "https://live.staticflickr.com/65535/54080307947_2c7344fa44_h.jpg",
     },
     {
         id: 9,
@@ -50,7 +50,7 @@ const pictures = [
     },
     {
         id: 12,
-        src: "https://live.staticflickr.com/65535/53665655865_66ff622864_h.jpg",
+        src: "https://live.staticflickr.com/65535/54081234751_8e03888a21_h.jpg"
     },
     {
         id: 13,
@@ -58,7 +58,7 @@ const pictures = [
     },
     {
         id: 14,
-        src: "https://live.staticflickr.com/65535/53665655495_f09d4ef4e2_h.jpg",
+        src: "https://live.staticflickr.com/65535/54081216276_b08d6d09fa_h.jpg",
     },
     {
         id: 15,
@@ -95,7 +95,7 @@ const Section1 = () => {
         // Set interval to shuffle pictures every 3 seconds
         const intervalId = setInterval(() => {
             shufflePictures();
-        }, 3000);
+        }, 4000);
 
         // Clear interval on component unmount
         return () => clearInterval(intervalId);
@@ -106,25 +106,9 @@ const Section1 = () => {
             <div className='down-arrow'>
                 <BsArrowDown />
             </div>
-
             <div className='about-me-section'>
-                <div className='section1-navbar'>
-                    <NavBar />
-                </div>
-
-                <h1 class="ml7">
-                    <span class="text-wrapper">
-                        <span class="letters">Reality is broken</span>
-                    </span>
-                </h1>
-
-                <h1> Hi I'm Callan </h1>
-                <p> A passonate and creative software enigneer.
-                    ggjn ks okgnd ioghignd josdbgsdnojbfjszboj okgnd
-                    jdghdgjn gdg onsp gndsoen iehtosn oua gepsn fiueb knfe
-                    dsngjosh seconds gsrg'dfbgjsfbseg
-                    sfb gdgsr
-                </p>
+                <h1> Some of My Favorite Outdoor Moments </h1>
+                <div> </div>
             </div>
             <div className="grid-container">
                 {screenWidth < 930 && screenWidth > 700 ?
@@ -133,7 +117,7 @@ const Section1 = () => {
                             <img
                                 src={picture.src}
                                 alt={`Picture ${picture.id}`}
-                            />
+                            /> 
                         </div>
                     )) : screenWidth < 700 ?
                         grid.slice(0, 4).map((picture, index) => (
