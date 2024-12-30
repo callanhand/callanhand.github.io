@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Section1.css'
-import NavBar from "./NavBar"
 import { BsArrowDown } from "react-icons/bs";
 
 const pictures = [
@@ -30,7 +29,7 @@ const pictures = [
     },
     {
         id: 7,
-        src: "https://live.staticflickr.com/65535/53664088892_390260b5b8_h.jpg",  
+        src: "https://live.staticflickr.com/65535/53664088892_390260b5b8_h.jpg",
     },
     {
         id: 8,
@@ -117,7 +116,7 @@ const Section1 = () => {
                             <img
                                 src={picture.src}
                                 alt={`Picture ${picture.id}`}
-                            /> 
+                            />
                         </div>
                     )) : screenWidth < 700 ?
                         grid.slice(0, 4).map((picture, index) => (

@@ -64,7 +64,7 @@ const Contact = () => {
 
          </form>
          <div className='contact-info'>
-            <a href="https://www.linkedin.com/in/callan-hand-81304818a/" target="_blank" ><BsLinkedin className='contact-icon' /></a>
+            <a className='contact-email' href="https://www.linkedin.com/in/callan-hand-81304818a/" target="_blank" ><BsLinkedin className='contact-icon'/></a>
             <div className='contact-email'> <BsEnvelope className='contact-icon' /> <span className='email'> callanhand4@outlook.com </span></div>
          </div>
       </div>
