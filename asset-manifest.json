@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f2ae8f1.css",
-    "main.js": "/static/js/main.f94df424.js",
+    "main.css": "/static/css/main.98c65c72.css",
+    "main.js": "/static/js/main.1d0838ed.js",
     "static/media/sunset.png": "/static/media/sunset.dc0fbe070182ed13c2de.png",
+    "static/media/cookbook.mp4": "/static/media/cookbook.4a077c0a158bb98da8ed.mp4",
     "static/media/RecycleDemo.mp4": "/static/media/RecycleDemo.acebc617a37063c9d7b1.mp4",
     "static/media/RecycleApp.mp4": "/static/media/RecycleApp.94d8585751f1581b3ad4.mp4",
+    "static/media/HackathonApp.mp4": "/static/media/HackathonApp.1f673acc161cb3fb7ef8.mp4",
     "static/media/stamp.png": "/static/media/stamp.a748b7e1e00cc731b24a.png",
+    "static/media/CallanHand_Resume.pdf": "/static/media/CallanHand_Resume.aa81a0095526c6c9ae5c.pdf",
     "static/media/postcardPaper.jpg": "/static/media/postcardPaper.a4f0284767dc000d1ff0.jpg",
     "index.html": "/index.html",
-    "main.1f2ae8f1.css.map": "/static/css/main.1f2ae8f1.css.map",
-    "main.f94df424.js.map": "/static/js/main.f94df424.js.map"
+    "main.98c65c72.css.map": "/static/css/main.98c65c72.css.map",
+    "main.1d0838ed.js.map": "/static/js/main.1d0838ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f2ae8f1.css",
-    "static/js/main.f94df424.js"
+    "static/css/main.98c65c72.css",
+    "static/js/main.1d0838ed.js"
   ]
 }
